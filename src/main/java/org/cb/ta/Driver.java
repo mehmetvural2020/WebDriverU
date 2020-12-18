@@ -9,7 +9,6 @@ public class Driver {
         System.setProperty("webdriver.chromedriver", "webdriver/chromedriver");
         driver = new ChromeDriver();
         return driver;
-
-
     }
+
 }
