@@ -14,4 +14,5 @@ public class HomePageTest {
     public void clickButtonLink(){
         homePage.clickButtonLink();
     }
+
 }
