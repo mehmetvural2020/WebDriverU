@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ClickButtonPage {
+public class ClickButtonsPage  {
+//    Onur beyin guncellemelerinden
+
     WebDriver driver;
     WebElement webclickbutton;
     WebElement conguralationstitle;
@@ -13,13 +15,11 @@ public class ClickButtonPage {
     WebElement closebutton;
     WebElement clsbutton;
 
-    public ClickButtonPage() {
+    public ClickButtonsPage() {
         driver=Driver.getDriver();
         driver.get("http://www.webdriveruniversity.com/Click-Buttons/index.html");
         webelementdefinition();
     }
-    //@FindBy(xpath ="//div[@id='main-header']")
-    // public WebElement maintitle;
 
     public void webelementdefinition(){
         maintitle=driver.findElement(By.xpath("//div[@id='main-header']"));
@@ -38,17 +38,20 @@ public class ClickButtonPage {
 
     public boolean webelememntclickbuttoncontroll(){
         return webclickbutton.isDisplayed();
-        //System.out.println("web element click button seemed");
     }
 
-    public boolean javascriptclickbuttoncontroll(){
-        return jsclickbutton.isDisplayed();
-        //System.out.println("js click button seemed");
+    public void javascriptclickbuttoncontroll(){
+        jsclickbutton.isDisplayed();
+        System.out.println("js click button seemed");
     }
 
-    public void wbbuttonclick(){
-        webclickbutton.click();
-        conguralationstitle.isDisplayed();
+    public boolean wbbuttonclick(){
+        boolean isDisplayed = webelememntclickbuttoncontroll();
+        if (isDisplayed) {
+            webclickbutton.click();
+            return true;
+        }
+        return false;
     }
 
     public void clickclosewbpopup() throws InterruptedException {
