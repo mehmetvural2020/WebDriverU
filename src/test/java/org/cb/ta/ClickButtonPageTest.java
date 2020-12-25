@@ -33,4 +33,9 @@ public class ClickButtonPageTest {
     public void jsbuttonclick(){
         clickbuttonsPage.jsbuttonclick();
     }
+
+    @Test
+    public void clsButtonPopupTest() throws InterruptedException {
+        clickbuttonsPage.clsButtonPopup();
+    }
 }

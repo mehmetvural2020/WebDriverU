@@ -59,4 +59,9 @@ public class ClickButtonPage {
     public void jsbuttonclick(){
         jsclickbutton.click();
     }
+
+    public void clsButtonPopup() throws InterruptedException {
+        Thread.sleep(2000);
+        clsbutton.click();
+    }
 }

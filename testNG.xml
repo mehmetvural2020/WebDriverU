@@ -7,7 +7,7 @@
             </class>
             <class name="org.cb.ta.ClickButtonPageTest">
             </class>
-            <class name="org.cb.ta.TodoListTest">
+            <class name="org.cb.ta.ToDoListTest">
             </class>
         </classes>
     </test> <!-- Test -->
