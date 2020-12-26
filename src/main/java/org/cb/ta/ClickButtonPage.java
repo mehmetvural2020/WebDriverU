@@ -27,7 +27,6 @@ public class ClickButtonPage {
         conguralationstitle=driver.findElement(By.xpath("//h4[@class='modal-title']"));
         jsclickbutton=driver.findElement(By.xpath("//span[@id='button2']"));
         closebutton=driver.findElement(By.xpath("//button[@class='close']"));
-        clsbutton=driver.findElement(By.xpath("//button[@class='btn btn-default']"));
     }
 
     public void maintitlecontrol(){
@@ -61,6 +60,8 @@ public class ClickButtonPage {
     }
 
     public void clsButtonPopup() throws InterruptedException {
+//        clsbutton=driver.findElement(By.xpath("//button[@class='btn btn-default']"));
+        clsbutton=driver.findElement(By.xpath("//*[@id=\"myModalJSClick\"]/div/div/div[2]/button"));
         Thread.sleep(2000);
         clsbutton.click();
     }
